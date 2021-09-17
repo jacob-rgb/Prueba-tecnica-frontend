@@ -174,7 +174,7 @@
         <button type="button" class="exitBtn" (click)="fichaModal = false"><i class="far fa-times-circle fa-2x"></i></button>
         <div class="row">
             <div class="col">
-                <img src="../../../../assets/iconoH.jpg" alt="foto ficha" width="300">
+                <img [src]="fichaActual.datos_paciente.sexo == 'M' ? '../../../../assets/iconoH.jpg' : '../../../../assets/iconoM.jpg' " alt="foto ficha" width="300">
             </div>
             <div class="col border-left" style="height: 330px;">
                 <div style="padding: 10px;">

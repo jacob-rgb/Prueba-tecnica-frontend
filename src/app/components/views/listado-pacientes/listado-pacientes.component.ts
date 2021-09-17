@@ -75,7 +75,7 @@ export class ListadoPacientesComponent implements OnInit {
 
   // Función encargada de convertir el modal de la ficha del paciente a fotmato PDF para descargarlo
 
-  descargarPdf = () => {
+  descargarPdf = (): void => {
     let data: any = document.querySelector('.modalFichaPaciente .content');
 
     html2canvas(data).then(canvas => {
@@ -132,9 +132,9 @@ export class ListadoPacientesComponent implements OnInit {
   @p: Propiedad con la información del paciente para cambiar la fichaActual
   */
 
-  openFichaModal = (e: any, p: any): Boolean | void => {    
+  openFichaModal = (e: any, paciente: any): Boolean | void => {    
     if('select' == e.target.className) return false;
-    this.fichaActual = p;
+    this.fichaActual = paciente;
     this.fichaModal = true;
   }
 
@@ -145,7 +145,7 @@ export class ListadoPacientesComponent implements OnInit {
   return: Retorna en forma de string la propiedad de css que rota un elemento
   */
 
-  calcPositionNum = (n:number, i: number ) => {
+  calcPositionNum = (n:number, i: number ): string => {
     return `transform: rotate(${ (i + 1) * 12 }deg); color: ${this.fichaActual.ficha_dental.dientes_no_mover.includes(n) ? 'red' : 'black'} `
   }
 }
