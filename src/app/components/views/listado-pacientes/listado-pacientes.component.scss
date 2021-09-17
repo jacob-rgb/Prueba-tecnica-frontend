@@ -1,0 +1,606 @@
+.listadoCont {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+// aside
+
+.left-menu {
+    box-shadow: 0px 2px 6px grey;
+    height: 100%;
+    width: 15%;
+}
+
+// pantalla de listado
+
+.listadoScreen {
+    height: 100%;
+    overflow-y: scroll;
+    width: 85%;
+}
+
+.listadoHeader {
+    background-color: rgb(228, 228, 228);
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.listadoHeader h5 {
+    font-weight: 200;
+}
+
+.optionsSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.optionsTitle {
+    align-items: center;
+    display: flex;
+}
+
+.optionsTitle i {
+    margin-right: 15px;
+}
+
+.optionsTitle p {
+    color: grey;
+}
+
+.optionsSection > div {
+    width: 50%;
+}
+
+.optionsSection .search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputSearch  {
+  width: 50%;
+}
+
+.inputSearch button {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    height:  45px;
+    width: 10%;
+}
+
+.inputSearch input {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    height: 45px;
+    padding: 0 15px;
+    width: 90%;
+}
+
+.optionButtons {
+    margin-top: 15px;
+}
+
+.optionButtons i {
+    margin-right: 5px;
+}
+
+.optionButtons .btn-outline {
+    background: transparent;
+    border: 1px solid  rgb(80, 176, 255);
+    border-radius: 4px;
+    color: rgb(80, 176, 255);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 5px;
+    padding: 10px 12px;
+}
+
+.orderButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 25%;
+}
+
+.orderButtons button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+// Pacientes en forma de lista
+
+.pacientesList {
+    margin-bottom: 100px;
+    padding: 0 25px;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+table tr {
+    border: 2px solid rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+table tr:first-child {
+    border: none;
+}
+
+table td {
+    padding: 15px 8px;
+  }
+
+table th {
+    padding: 8px;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+table .userData {
+    align-items: center;
+    display: flex;
+}
+
+table .tablaEstado {
+    background-color: blue;
+    border-radius: 50px 20px 50px 20px;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+table time {
+    color: grey;
+}
+
+table .select {
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+ option {
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+.pageControls {
+    text-align: center;
+}
+
+// Pacientes Cartas
+
+.pacientesCardCont {
+    margin-bottom: 100px;
+}
+
+.pacientesCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, .5fr));
+    gap: 3rem 1rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+    border: 2px solid rgb(180, 180, 180); 
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.card .cardImg {
+    background-color: white;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    margin-bottom: 15px;
+    text-align: center;
+    width: 60%;
+}
+
+.card .cardEstado {
+    border-radius: 50px;
+    color: white;
+    padding: 6px;
+}
+
+.card b {
+    color: rgb(40, 126, 255);
+}
+
+.cardBtns {
+    margin-top: 15px;
+}
+
+.cardBtns button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin:  5px;
+    padding: 8px;
+}
+
+.cardBtns button:active {
+    background-color: grey;
+}
+
+// Modal de Nuevo Paciente
+
+.modalNewPaciente {
+    align-items: center;
+    background-color: rgb(34, 34, 34, .7);
+    border-radius: 15px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.modalNewPaciente form {
+    background-color: honeydew;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.modalNewPaciente .form-group {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.modalNewPaciente .form-group input[type = 'text'],
+.modalNewPaciente .form-group input[type = 'datetime'] {
+    padding: 6px;
+    width: 100%;
+}
+
+.modalNewPaciente select {
+    padding: 6px;
+}
+
+.modalNewPaciente .buttons-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.modalNewPaciente .buttons-group button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    padding: 10px 15px;
+}
+
+// Modal Ficha Paciente
+
+.modalFichaPaciente {
+    align-items: center;
+    background-color: rgb(34, 34, 34, .7);
+    display: flex;
+    height:100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+.modalFichaPaciente .content {
+    background-color: white;
+    padding: 20px;
+    transform: scale(.7);
+    width: 60%;
+}
+
+
+.row {
+    align-items: center;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.col .box {
+    border-bottom: 1px solid black;
+    font-size: 28px;
+    margin: 10px 10px;
+    padding: 6px;
+    width: 95%;
+}
+
+.col .box div {
+    margin: 20px 0;
+}
+
+.col .box div p {
+    margin-top: 10px;
+}
+
+.col .d-row {
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.col .d-row div {
+    border-left: 1px solid black;
+    margin: 0 10px;
+    padding-left: 10px;
+}
+
+.col .d-row div:first-child {
+    border-left: none;
+    padding-left: none;
+}
+
+.numsCont {
+    display: grid;
+    height: 100%;
+    left: 37%;
+    position: absolute;
+    top: -237px;
+    width: 50%;
+}
+
+.numsCont span {
+    font-size: 25px;
+    height: 280px;
+    position: absolute;
+    text-align: center;
+    transform-origin: bottom center;
+    width: 10px;
+}
+
+.numsCont2 {
+    position: absolute;
+    top: 259px;
+    left: 11%;
+    width: 50%;
+    height: 100%;
+    display: grid;
+}
+
+.numsCont2 span {
+    font-size: 25px;
+    height: 280px;
+    position: absolute;
+    text-align: center;
+    transform-origin: bottom center;
+    width: 10px;
+}
+
+.modalFichaPaciente .exitBtn {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+.modalFichaPaciente .content .buttons button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 8px;
+}
+
+
+
+// MEDIA 
+
+@media screen and(max-width: 1550px) {
+    .numsCont2 {
+        left: 16%;
+        top:171px;
+    }
+    
+    .numsCont2 span {
+        height: 215px;
+    }
+
+    .numsCont {
+        left: 33%;
+        top: -171px;
+    }
+    
+    .numsCont span {
+        height: 215px;
+    }
+
+    .modalFichaPaciente .content {
+        background-color: white;
+        padding: 20px;
+        transform: scale(.5);
+        width: 60%;
+    }
+    
+    .numsCont2 {
+        left: 16%;
+        top:171px;
+    }
+    
+    .numsCont2 span {
+        height: 215px;
+    }
+
+    .numsCont {
+        top: -171px;
+        left: 33%;
+    }
+    
+    .numsCont span {
+        height: 215px;
+    }
+
+    
+}
+
+
+@media screen and(max-width: 1000px) {
+    .left-menu {
+        display: none;
+    }
+
+    .listadoScreen {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .pacientesList {
+        overflow: scroll;
+    }
+
+    .inputSearch {
+        width: 100%;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .modalFichaPaciente {
+        display: unset;
+        overflow: scroll;
+    }
+
+    .modalFichaPaciente .content {
+        transform: scale(1);
+        width: 90%;
+    }
+
+    .modalFichaPaciente .row {
+        flex-wrap: wrap;
+    }
+
+    .modalFichaPaciente .row .col {
+        width: 100%;
+    }
+
+    .border-left {
+        border-left: none;
+    }
+
+    .numsCont2 {
+        left: 10%;
+        top:292px;
+    }
+    
+    .numsCont2 span {
+        height: 318px;
+    }
+
+    .numsCont {
+        left: 39%;
+        top: -300px;
+    }
+    
+    .numsCont span {
+        height: 318px;
+    }
+}
+
+@media screen and(max-width: 800px) {
+   .modalNewPaciente {
+       padding: 5px;
+   }
+
+   .modalNewPaciente form   {
+       padding: 5px;
+       width: 90%;
+   }
+
+   .modalNewPaciente form input {
+       max-width: 90%;
+   }
+
+   .modalNewPaciente .buttons-group {
+       flex-wrap: wrap;
+
+   }
+
+   .modalNewPaciente .buttons-group button {
+       margin: 6px;
+   }
+
+   .optionsSection {
+       flex-wrap: wrap;
+   }
+
+   .optionsSection .options {
+       padding: 0 20px;
+       width: 100%;
+   }
+
+   .orderButtons {
+       justify-content: center;
+       width: 100%;
+   }
+
+   .optionsSection .search {
+       width: 100%;
+   }
+}
+
+@media screen and(max-width: 400px) {
+    .numsCont2 {
+        left: 12%;
+        top:118px;
+    }
+    
+    .numsCont2 span {
+        height: 150px;
+    }
+
+    .numsCont {
+        left: 36%;
+        top: -108px;
+    }
+    
+    .numsCont span {
+        height: 150px;
+    }
+   
+ }
+
