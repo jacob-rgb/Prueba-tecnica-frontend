@@ -1,27 +1,22 @@
-# PruebaTecnicaJr
+# PruebaTecnica-FrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+Prueba Técnica que simula un sistema de administración de pacientes para clínicas dentales.
 
-## Development server
+## Ecosistema
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Este proyecto web ha sido desarrollado para ser soportado por distintos navegadores (chrome, IE,...)
+- Este proyecto ha sido desarrollado con angular
 
-## Code scaffolding
+## Pre-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para poder levantar la aplicación es necesario:
+- Editor de Código (VSC, Atom..).
+- Tener instalado nodeJS.
+- Tener instalado angular (npm install -g @angular/cli)
 
-## Build
+## Levantar La Aplicación
+Una vez dentro de la carpeta del proyecto introduzca el siguiente comando para iniciar la aplicación en un servidor local:
+- ` ng serve -o `
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
